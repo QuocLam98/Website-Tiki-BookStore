@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css'; 
 import HomePage from './components/homepage';
 import Header from './components/header';
+import Footer from './components/footer';
 import reportWebVitals from './reportWebVitals';
+import Detail from './components/detail';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,7 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Header />
-    <HomePage />
+    <Detail />
+    <Footer />
   </React.StrictMode>
 );
 

@@ -2,7 +2,7 @@ import '../assets/header.css'
 
 function Header() {
     return (
-        <div className='flex bg-white py-3 px-4 gap-10 container'>
+        <div className='flex bg-white py-4 gap-10'>
             <div className='w-24 flex flex-col icon'>
                 <img src='https://salt.tikicdn.com/ts/upload/0e/07/78/ee828743c9afa9792cf20d75995e134e.png' alt='' />
                 <span>Tốt & Nhanh</span>

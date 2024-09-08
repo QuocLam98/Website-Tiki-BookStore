@@ -2,22 +2,31 @@ import { useEffect, useState } from 'react';
 import '../assets/homepage.css'
 import Data from '../db.json';
 
+interface img {
+  base_url: string
+}
+
 interface itemBook {
   id: number,
-  img : Array<object>,
+  img : Array<img>,
   price: number,
   description: string,
   name: string,
 }
 
-function HomePage() {
 
+function HomePage() {
+  const dataImg : img = {
+    base_url: ''
+  }
   const listBook: itemBook[] = [];
   const data = Data;
   data.books.forEach(e => {
     const itemData: itemBook = {
       id: 0,
-      img: [],
+      img: [{
+        base_url: ''
+      }],
       price: 0,
       description: '',
       name: ""
@@ -29,10 +38,12 @@ function HomePage() {
     itemData.name = e.name
     listBook.push(itemData)
   });
-  console.log(listBook[0].img)
   let renderList = listBook.map(e => {
+    e.img.forEach(i => {
+      dataImg.base_url = i.base_url
+    })
     return <div className='col-span-1 rounded-lg flex flex-col item gap-2'>
-    <img src='' alt='' />
+    <img src={dataImg.base_url} alt='' />
     <div className='content flex flex-col gap-2'>
       <span className='name'>{e.name}</span>
       <div className='flex items-center'>
@@ -135,7 +146,7 @@ function HomePage() {
             <span>từ 3 sao</span>
           </div>
         </div>
-        <div className='col-span-2 grid grid-cols-5 gap-2'>
+        <div className='col-span-2 grid grid-cols-4 gap-4'>
           {/* <div className='col-span-1 rounded-lg flex flex-col item gap-2'>
             <img src='' alt='' />
             <div className='content flex flex-col gap-2'>
