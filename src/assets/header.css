@@ -1,0 +1,135 @@
+.icon img {
+    max-width: 96px;
+}
+.icon span {
+    font-size: 14px;
+    color: rgb(0, 62, 161);
+    margin-top: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+.input-search {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(221, 221, 227);
+    border-radius: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.input-search img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 18px;
+}
+.input-search input {
+    border: 0px;
+    padding: 0px 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex: 1 1 0%;
+    outline: none;
+}
+.input-search button {
+    cursor: pointer;
+    border: 0px;
+    width: 92px;
+    height: 38px;
+    padding: 4px;
+    border-radius: 0px 8px 8px 0px;
+    background: transparent;
+    color: rgb(10, 104, 255);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    outline: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+}
+.input-search button:hover {
+    background-color: rgba(10, 104, 255, 0.2);
+}
+.home {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.nav-home {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    -webkit-box-pack: end;
+    margin-left: 48px;
+}
+.home:hover {
+    background-color: rgba(39, 39, 42, 0.12);
+}
+.home img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+.home span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(128, 128, 137);
+}
+.shop {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+.shop::before
+{
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    left: -12px;
+    border: 1px solid rgb(235, 235, 240);
+}
+.shop:hover {
+    background-color: rgba(39, 39, 42, 0.12);
+}
+.shop img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+.shop span {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 66, 79);
+    height: 16px;
+    right: 10px;
+    top: -4px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 150%;
+    position: absolute;
+    padding: 0.5px 4px;
+}
